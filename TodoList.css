@@ -19,7 +19,7 @@ ul {
 .header {
     background-color: #42a5f5; 
     color: white;
-    padding: 20px;
+    padding: 1px;
     text-align: left;
 }
 
@@ -76,6 +76,13 @@ ul {
     
 }
 
+.list {
+    margin-left: 60px;
+    color: white;
+    padding: 1px;
+}
+
+
 .add-task {
     margin-top: 40px;
     margin-left: 60px;
@@ -83,7 +90,7 @@ ul {
     width: 80%;
     max-width: 600px;
     background-color: white;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -130,7 +137,6 @@ ul {
     text-align: center;
 }
 
-/* Стиль для задачи */
 .tasks__list li {
     box-shadow: inset 6px 0px 0px rgba(81, 81, 81, 0.3);
     text-align: left;
@@ -154,6 +160,7 @@ ul {
 }
 
 .clear-button {
+    margin-top: 10px;
     width: 100%;
     background-color: #ef5350; 
     color: white;
