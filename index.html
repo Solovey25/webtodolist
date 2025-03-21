@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="TodoList.css">
+</head>
+<body>
+
+    <header class="header">
+        <header>Список задач</header>
+    </header>
+
+    
+
+    <main class="tasks">
+        <section class="add-task">
+        <h1>Новая задача</h1>
+        <div class="add-task__form">
+            <input type="text" placeholder="Название задачи...">
+            <button class="add-task__button">+ Добавить</button>
+        </div>
+
+    </section>
+        <section class="tasks__column backlog">
+            <p class="p1">Бэклог</p>
+            <ul class="tasks__list">
+                <li>Выучить JS</li>
+                <li>Выучить React</li>
+                <li>Сделать домашку</li>
+            </ul>
+        </section>
+
+        <section class="tasks__column in-progress">
+            <p class="p2">В процессе</p>
+            <ul class="tasks__list2">
+                <li>Выпить смузи</li>
+                <li>Попить воды</li>
+            </ul>
+        </section>
+
+        <section class="tasks__column done">
+            <p class="p3">Готово</p>
+            <ul class="tasks__list3">
+                <li>Позвонить маме</li>
+                <li>Погладить кота</li>
+            </ul>
+        </section>
+
+        <section class="tasks__column trash">
+
+            <p class="p4">Корзина</p>
+            <ul class="tasks__list4">
+                <li>Сходить погулять</li>
+                <li>Прочитать Войну и Мир</li>
+                <button class="clear-button">X Очистить</button>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
