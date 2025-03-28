@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f7;
+}
+
+h1 {
+    text-align: left;
+    color: rgb(81 81 81);
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #42a5f5;
+    color: white;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.header .list {
+    margin-left: 60px;
+    color: white;
+    padding: 1px;
+    font-size: 1.8em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.add-task {
+    margin: 20px 40px 20px 40px;
+    width: auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 15px 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-task h1 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+
+.add-task__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-task__form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 24px;
+}
+
+.add-task__button {
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    height: 46px;
+    box-sizing: border-box;
+}
+
+.add-task__button:hover {
+    background-color: #1e88e5;
+}
+
+main.tasks {
+    margin: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tasks__column {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tasks__column p {
+    padding: 10px 17px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.tasks__column.backlog p { background-color: rgb(204 204 204); }
+.tasks__column.in-progress p { background-color: rgba(82, 160, 255, 0.3); }
+.tasks__column.done p { background-color: rgba(82, 255, 94, 0.3); }
+.tasks__column.trash p { background-color: rgba(255, 82, 82, 0.3); }
+
+.tasks__list {
+}
+
+.tasks__list li {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: inset 6px 0px 0px rgba(81, 81, 81, 0.3);
+}
+
+.tasks__list li:hover {
+    background-color: #ddd;
+}
+
+.tasks__column.backlog .tasks__list li { box-shadow: inset 6px 0px 0px rgba(81, 81, 81, 0.3); }
+.tasks__column.in-progress .tasks__list li { box-shadow: inset 6px 0px 0px rgba(82, 160, 255, 0.3); }
+.tasks__column.done .tasks__list li { box-shadow: inset 6px 0px 0px rgba(82, 255, 94, 0.3); }
+.tasks__column.trash .tasks__list li { box-shadow: inset 6px 0px 0px rgba(255, 82, 82, 0.3); }
+
+.clear-button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    padding: 17px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
