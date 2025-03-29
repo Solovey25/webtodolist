@@ -1,8 +1,6 @@
 import { createElement } from '../framework/render.js';
 
-function createTaskColumnTemplate(title, tasks, className) {
-    const tasksHtml = tasks.map(task => `<li>${task}</li>`).join('');
-
+function createTaskColumnTemplate(title, className) {
     const clearButtonHtml = className === 'trash'
         ? '<button class="clear-button">X Очистить</button>'
         : '';
@@ -11,7 +9,6 @@ function createTaskColumnTemplate(title, tasks, className) {
     <section class="tasks__column ${className}">
       <p>${title}</p>
       <ul class="tasks__list">
-        ${tasksHtml}
       </ul>
       ${clearButtonHtml}
     </section>
@@ -19,15 +16,14 @@ function createTaskColumnTemplate(title, tasks, className) {
 }
 
 export default class TaskColumnComponent {
-    constructor(title, tasks, className) {
+    constructor(title, className) {
         this.title = title;
-        this.tasks = tasks;
         this.className = className;
         this._element = null;
     }
 
     getTemplate() {
-        return createTaskColumnTemplate(this.title, this.tasks, this.className);
+        return createTaskColumnTemplate(this.title, this.className);
     }
 
     getElement() {
@@ -37,7 +33,15 @@ export default class TaskColumnComponent {
         return this._element;
     }
 
+    getTaskListContainerElement() {
+        return this.getElement().querySelector('.tasks__list');
+    }
+
+
     removeElement() {
-        this._element = null;
+        if (this._element) {
+            this._element.remove();
+            this._element = null;
+        }
     }
 }
