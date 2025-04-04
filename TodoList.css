@@ -1,0 +1,231 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f7; 
+}
+
+h1 {
+    text-align: left;
+    color: rgb(81 81 81);
+}
+
+
+
+ul { 
+    padding: auto;
+  }
+
+.header {
+    background-color: #42a5f5; 
+    color: white;
+    padding: 1px;
+    text-align: left;
+}
+
+.p1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 20px;
+    width: 17%;
+    margin-left: 40px;
+    text-align: left;
+    border-radius: 10px;
+
+    background-color: rgb(204 204 204);
+    
+}
+.p2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 20px;
+    width: 32%;
+    margin-left: 40px;
+    text-align: left;
+    border-radius: 10px;
+
+    background-color: rgba(82, 160, 255, 0.3);
+    
+}
+.p3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 20px;
+    width: 17%;
+    margin-left: 40px;
+    text-align: left;
+    border-radius: 10px;
+
+    background-color:rgba(82, 255, 94, 0.3)
+    
+}
+.p4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 20px;
+    width: 22%;
+    margin-left: 40px;
+    text-align: left;
+    border-radius: 10px;
+
+    background-color:rgba(255, 82, 82, 0.3)
+    
+}
+
+.list {
+    margin-left: 60px;
+    color: white;
+    padding: 1px;
+}
+
+
+.add-task {
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 100%;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 5px 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-task__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task__form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.add-task__button {
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    padding: 17px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-task__button:hover {
+    background-color: #1e88e5;
+}
+
+.tasks {
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.tasks__column {
+    width: 20%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tasks__list li {
+    box-shadow: inset 6px 0px 0px rgba(81, 81, 81, 0.3);
+    text-align: left;
+    background-color: #ffffff;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tasks__list li:hover {
+    background-color: #ddd;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.clear-button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ef5350; 
+    color: white;
+    border: none;
+    padding: 17px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+/* ------------------------------------------- */
+
+.tasks__list2 li {
+    box-shadow: inset 6px 0px 0px rgba(82, 160, 255, 0.3);
+    text-align: left;
+    background-color: #ffffff;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tasks__list2 li:hover {
+    background-color: #ddd;
+}
+
+
+.tasks__list3 li {
+    box-shadow: inset 6px 0px 0px rgba(82, 255, 94, 0.3);
+    text-align: left;
+    background-color: #ffffff;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tasks__list3 li:hover {
+    background-color: #ddd;
+}
+
+
+.tasks__list4 li {
+    box-shadow: inset 6px 0px 0px rgba(255, 82, 82, 0.3);
+    text-align: left;
+    background-color: #ffffff;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tasks__list4 li:hover {
+    background-color: #ddd;
+}
