@@ -17,13 +17,11 @@ export default class AddTaskComponent {
 
     getElement() {
         if (!this.element) {
-            // Теперь createElement получит строку с одним корневым элементом
             this.element = createElement(this.getTemplate());
         }
         return this.element;
     }
 
-    // Не забудьте добавить метод removeElement, если он используется в вашем фреймворке
     removeElement() {
          this.element = null;
     }
